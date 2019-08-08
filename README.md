@@ -18,25 +18,25 @@ Sign up  The source code and dataset about &lt;Deep Learning - Best Practices on
 
 * 更实用的数据集案例以及TFDS接口介绍
 * 动态图里、静态图、估算器间的相互转化及嵌套实例
-* 	TensorFlow1.x与TensorFlow2.x之间的关系，及转化实例
-* 	特征工程相关知识，以及推荐系统、知识图谱配合深度学习的应用
- | 	升级版的dropout（Targeted Dropout）
- | 	各种注意力（多头注意力、BahdanauAttention 、LuongAttention、 单调注意力机制、混合注意力机制）
- | 	各种归一化（ReNorm、LayerNorm、instance_norm、GroupNorm、SwitchableNorm）
- | 	在RNN网络中添加多项式分布
- | 	Seq2Seq新框架更全面的介绍，和更底层的使用实例。
- | 	基于AI模型的安全技术（FGSM、黑箱攻击等方法）
- | 	图像合成、声音合成、安全领域的攻击样本合成相关实例
- | 	增加了基于URL、安卓、IOS的上的布署实例
+* TensorFlow1.x与TensorFlow2.x之间的关系，及转化实例
+* 特征工程相关知识，以及推荐系统、知识图谱配合深度学习的应用
+*	升级版的dropout（Targeted Dropout）
+* 各种注意力（多头注意力、BahdanauAttention 、LuongAttention、 单调注意力机制、混合注意力机制）
+*	各种归一化（ReNorm、LayerNorm、instance_norm、GroupNorm、SwitchableNorm）
+* 在RNN网络中添加多项式分布
+* Seq2Seq新框架更全面的介绍，和更底层的使用实例。
+* 基于AI模型的安全技术（FGSM、黑箱攻击等方法）
+* 图像合成、声音合成、安全领域的攻击样本合成相关实例
+* 增加了基于URL、安卓、IOS的上的布署实例
 ##  二、书中包含的知识点如下： 
 TF-slim、TF-Hub、T2T、tf.layers、tf.js、TFDS、tf.Keras、TFLearn、tfdbg、Training Hooks、Estimators、eager、TF_CONFIG、KubeFlow、tf.feature_column、知识图谱、sequence_feature_column、TFBT、 factorization、Lattice、tf.Transform、点阵校准模型、wals kmeans  BoostedTrees、深度卷积、空洞卷积、深度可分离卷积、胶囊卷积网络、矩阵胶囊、TextCnn、ResNet、PNASNet、VGG、YOLO V3、Mask R-CNN、Targeted Dropout、QRNN 、SRU、 IndRnn、IndyLSTM、 JANET、 Seq2Seq、TFTS 、多项式分布、Tacotron、TFGan、多头注意力、BahdanauAttention 、LuongAttention、 单调注意力机制、混合注意力机制、stft、ReNorm、LayerNorm、instance_norm、GroupNorm、SwitchableNorm、FGSM、cleverhans 黑箱攻击  Jacobian矩阵、defun、TF_serving  saved_model  TF_lite。
 
 
 同样该书仍然保持以前一贯的作风：
-	组建qq群，由作者亲自解答问题
-	在大蛇智能官网上同步勘误（www.aianaconda.com）
-	开放大蛇智能论坛，方便读者交流和查阅历史问题(bbs.aianaconda.com)
-	开源图书配套的全部代码，与数据集
-	在相约机器人公众号上，持续更新跟书籍知识相关的AI扩展技术。
-代码医生工作室希望借助于本书，帮助到更多的AI爱好者，加速人工智能在国内的发展，让更多的技术人员更容易的进入这个蓬勃发展的行业。
+*	组建qq群，由作者亲自解答问题
+*	在大蛇智能官网上同步勘误（www.aianaconda.com）
+*	开放大蛇智能论坛，方便读者交流和查阅历史问题(bbs.aianaconda.com)
+*	开源图书配套的全部代码，与数据集
+*	在相约机器人公众号上，持续更新跟书籍知识相关的AI扩展技术。
+
 
