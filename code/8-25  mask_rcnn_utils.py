@@ -139,8 +139,8 @@ def run_graph(MaskRCNNobj, images, outputs,BATCH_SIZE, image_metas=None):
 
         # 通过tf.Keras的function来运行图中的一部分
         inputs = model.inputs
-        if model.uses_learning_phase and not isinstance(K.learning_phase(), int):
-            inputs += [K.learning_phase()]
+#        if model.uses_learning_phase and not isinstance(K.learning_phase(), int):
+#            inputs += [K.learning_phase()]
         kf = K.function(model.inputs, list(outputs.values()))
 
         if image_metas is None:#将图片缩放，归一，默认返回值是window补0后的真实坐标
@@ -159,8 +159,8 @@ def run_graph(MaskRCNNobj, images, outputs,BATCH_SIZE, image_metas=None):
         model_in = [molded_images, image_metas, anchors]
 
         #运行
-        if model.uses_learning_phase and not isinstance(K.learning_phase(), int):
-            model_in.append(0.)
+#        if model.uses_learning_phase and not isinstance(K.learning_phase(), int):
+#            model_in.append(0.)
         outputs_np = kf(model_in)
 
         #将结果打包成字典

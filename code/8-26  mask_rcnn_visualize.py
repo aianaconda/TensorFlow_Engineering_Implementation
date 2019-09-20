@@ -10,7 +10,8 @@ import sys
 import random
 import itertools
 import colorsys
-
+import matplotlib
+matplotlib.use('Qt5Agg')
 import numpy as np
 from skimage.measure import find_contours
 import matplotlib.pyplot as plt
