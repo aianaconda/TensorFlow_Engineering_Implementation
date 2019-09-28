@@ -387,12 +387,17 @@ class MaskRCNN():    #内部封装的keras_model为真正模型
         # Anchors
         else :
             anchors = self.get_anchors([IMAGE_DIM, IMAGE_DIM, 3])
+            
             # Duplicate across the batch dimension because Keras requires it
             # TODO: can this be optimized to avoid duplicating the anchors?
             anchors = np.broadcast_to(anchors, (self.batch_size,) + anchors.shape)
             # A hack to get around Keras's bad support for constants
-            anchors = KL.Lambda(lambda x: tf.Variable(anchors), name="anchors")(input_image)            
             
+#            anchors = KL.Lambda(lambda x: tf.Variable(anchors), name="anchors")(input_image)            
+            
+            anchors = KL.Lambda(lambda x: tf.constant(anchors), name="anchors")(input_image)            
+            
+
             
         #返回nms去重后，前景分数最大的n个ROI
         rpn_rois = ProposalLayer(proposal_count=proposal_count, nms_threshold=RPN_NMS_THRESHOLD,batch_size=self.batch_size,
@@ -572,21 +577,25 @@ class MaskRCNN():    #内部封装的keras_model为真正模型
             if 'gamma' not in w.name and 'beta' not in w.name]
         self.keras_model.add_loss(tf.add_n(reg_losses))
 
+
         # Compile
         self.keras_model.compile(
             optimizer=optimizer,
             loss=[None] * len(self.keras_model.outputs))
+        
 
         # Add metrics for losses
         for name in loss_names:
             if name in self.keras_model.metrics_names:
                 continue
             layer = self.keras_model.get_layer(name)
-            self.keras_model.metrics_names.append(name)
+            self.keras_model._compile_metrics_names.append(name)
             loss = (
                 tf.reduce_mean(layer.output, keepdims=True)
                 * LOSS_WEIGHTS.get(name, 1.))
-            self.keras_model.metrics_tensors.append(loss)
+            self.keras_model._compile_stateful_metrics_tensors[name]=loss
+            
+
 
     def set_trainable(self, layer_regex, keras_model=None, indent=0, verbose=1):
         """Sets model layers as trainable if their names match

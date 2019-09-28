@@ -261,7 +261,7 @@ model.train(dataset_train, dataset_val ,batch_size =  BATCH_SIZE,
             layers="all")
 #########################################################################
 import os
-MODEL_DIR = "mask_model"
+MODEL_DIR = "mask_model";os.makedirs(MODEL_DIR, exist_ok=True)
 model_path = os.path.join(MODEL_DIR, "mask_rcnn_shapes.h5")
 model.keras_model.save_weights(model_path)
 
