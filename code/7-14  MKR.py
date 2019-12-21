@@ -14,7 +14,7 @@ class CrossCompressUnit(base.Layer):
        self.bias_v = self.add_weight(name='bias_v', shape=dim, initializer=tf.zeros_initializer())
        self.bias_e = self.add_weight(name='bias_e', shape=dim, initializer=tf.zeros_initializer())
 
-    def _call(self, inputs):
+    def __call__(self, inputs):
         v, e = inputs#v和e的形状为[batch_size, dim]
         v = tf.expand_dims(v, dim=2)#v的形状为 [batch_size, dim, 1]
         e = tf.expand_dims(e, dim=1)#e的形状为 [batch_size, 1, dim]
