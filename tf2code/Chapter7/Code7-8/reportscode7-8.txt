@@ -1,0 +1,25 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 1 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: D:\01-TF\01-TF2\Chapter7\Code7-8\code7-8-TF1.py
+--------------------------------------------------------------------------------
+D:\01-TF\01-TF2\Chapter7\Code7-8\code7-8-TF1.py:85:9: ERROR: Using member tf.contrib.factorization.KMeansClustering in deprecated module tf.contrib. tf.contrib.factorization.KMeansClustering cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'D:\\01-TF\\01-TF2\\Chapter7\\Code7-8\\code7-8-TF1.py'
+ outputting to 'D:\\01-TF\\01-TF2\\Chapter7\\Code7-8\\code7-8-TF2.py'
+--------------------------------------------------------------------------------
+
+85:9: ERROR: Using member tf.contrib.factorization.KMeansClustering in deprecated module tf.contrib. tf.contrib.factorization.KMeansClustering cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+90:9: INFO: Renamed 'tf.train.limit_epochs' to 'tf.compat.v1.train.limit_epochs'
+91:6: INFO: Added keywords to args of function 'tf.convert_to_tensor'
+109:9: INFO: Renamed 'tf.train.limit_epochs' to 'tf.compat.v1.train.limit_epochs'
+110:6: INFO: Added keywords to args of function 'tf.convert_to_tensor'
+--------------------------------------------------------------------------------
+

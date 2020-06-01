@@ -1,0 +1,23 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 0 issues that require attention
+--------------------------------------------------------------------------------
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'D:\\01-TF\\01-TF2\\Chapter10\\code10.3\\code10-7-testattgan-TF1.py'
+ outputting to 'D:\\01-TF\\01-TF2\\Chapter10\\code10.3\\code10-7-testattgan-TF2.py'
+--------------------------------------------------------------------------------
+
+56:0: INFO: Renamed 'tf.reset_default_graph' to 'tf.compat.v1.reset_default_graph'
+58:9: INFO: Renamed 'tf.ConfigProto' to 'tf.compat.v1.ConfigProto'
+60:7: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+72:12: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+73:12: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+87:11: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+93:15: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+--------------------------------------------------------------------------------
+

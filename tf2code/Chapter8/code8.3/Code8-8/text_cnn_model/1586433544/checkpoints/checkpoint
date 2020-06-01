@@ -1,0 +1,2 @@
+model_checkpoint_path: "D:\\01-TF\\01-TF2\\Chapter8\\Code8-8\\text_cnn_model\\1586433544\\checkpoints\\model-2000"
+all_model_checkpoint_paths: "D:\\01-TF\\01-TF2\\Chapter8\\Code8-8\\text_cnn_model\\1586433544\\checkpoints\\model-2000"

@@ -1,0 +1,30 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 1 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: D:\01-TF\01-TF2\Chapter4\code4-12\code4-12-TF1.py
+--------------------------------------------------------------------------------
+D:\01-TF\01-TF2\Chapter4\code4-12\code4-12-TF1.py:142:15: WARNING: Changing dataset.make_one_shot_iterator() to tf.compat.v1.data.make_one_shot_iterator(dataset). Please check this transformation.
+
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'D:\\01-TF\\01-TF2\\Chapter4\\code4-12\\code4-12-TF1.py'
+ outputting to 'D:\\01-TF\\01-TF2\\Chapter4\\code4-12\\code4-12-TF2.py'
+--------------------------------------------------------------------------------
+
+16:0: INFO: Renamed 'tf.enable_eager_execution' to 'tf.compat.v1.enable_eager_execution'
+55:12: INFO: Renamed 'tf.random_uniform' to 'tf.random.uniform'
+56:26: INFO: Renamed 'tf.random_crop' to 'tf.image.random_crop'
+64:26: INFO: Renamed 'tf.random_shuffle' to 'tf.random.shuffle'
+89:8: INFO: Renamed 'tf.random_uniform' to 'tf.random.uniform'
+90:20: INFO: Added keywords to args of function 'tf.cond'
+101:23: INFO: Renamed 'tf.read_file' to 'tf.io.read_file'
+142:15: WARNING: Changing dataset.make_one_shot_iterator() to tf.compat.v1.data.make_one_shot_iterator(dataset). Please check this transformation.
+
+--------------------------------------------------------------------------------
+

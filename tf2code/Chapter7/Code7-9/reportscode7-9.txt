@@ -1,0 +1,40 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 2 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: D:\01-TF\01-TF2\Chapter7\Code7-9\code7-9-TF1.py
+--------------------------------------------------------------------------------
+D:\01-TF\01-TF2\Chapter7\Code7-9\code7-9-TF1.py:109:11: ERROR: Using member tf.contrib.factorization.KMeans in deprecated module tf.contrib. tf.contrib.factorization.KMeans cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+D:\01-TF\01-TF2\Chapter7\Code7-9\code7-9-TF1.py:112:22: ERROR: Using member tf.contrib.factorization.COSINE_DISTANCE in deprecated module tf.contrib. tf.contrib.factorization.COSINE_DISTANCE cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'D:\\01-TF\\01-TF2\\Chapter7\\Code7-9\\code7-9-TF1.py'
+ outputting to 'D:\\01-TF\\01-TF2\\Chapter7\\Code7-9\\code7-9-TF2.py'
+--------------------------------------------------------------------------------
+
+37:23: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+39:23: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+109:11: ERROR: Using member tf.contrib.factorization.KMeans in deprecated module tf.contrib. tf.contrib.factorization.KMeans cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+112:22: ERROR: Using member tf.contrib.factorization.COSINE_DISTANCE in deprecated module tf.contrib. tf.contrib.factorization.COSINE_DISTANCE cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+125:20: INFO: Added keywords to args of function 'tf.reduce_sum'
+127:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+127:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+129:8: INFO: Renamed 'tf.truncated_normal' to 'tf.random.truncated_normal'
+136:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+136:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+138:8: INFO: Renamed 'tf.truncated_normal' to 'tf.random.truncated_normal'
+145:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+145:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+147:8: INFO: Renamed 'tf.truncated_normal' to 'tf.random.truncated_normal'
+186:11: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+189:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+--------------------------------------------------------------------------------
+

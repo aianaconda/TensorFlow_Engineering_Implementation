@@ -1,0 +1,33 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 2 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: D:\01-TF\01-TF2\Chapter6\code6-5\code6-5-TF1.py
+--------------------------------------------------------------------------------
+D:\01-TF\01-TF2\Chapter6\code6-5\code6-5-TF1.py:86:12: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+D:\01-TF\01-TF2\Chapter6\code6-5\code6-5-TF1.py:89:4: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'D:\\01-TF\\01-TF2\\Chapter6\\code6-5\\code6-5-TF1.py'
+ outputting to 'D:\\01-TF\\01-TF2\\Chapter6\\code6-5\\code6-5-TF2.py'
+--------------------------------------------------------------------------------
+
+24:0: INFO: Renamed 'tf.reset_default_graph' to 'tf.compat.v1.reset_default_graph'
+36:4: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+37:4: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+39:16: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+48:6: INFO: Added keywords to args of function 'tf.reduce_mean'
+50:12: INFO: Renamed 'tf.train.GradientDescentOptimizer' to 'tf.compat.v1.train.GradientDescentOptimizer'
+57:8: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+57:23: INFO: Renamed 'tf.global_variables' to 'tf.compat.v1.global_variables'
+67:5: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+68:13: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+86:12: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+89:4: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+--------------------------------------------------------------------------------
+

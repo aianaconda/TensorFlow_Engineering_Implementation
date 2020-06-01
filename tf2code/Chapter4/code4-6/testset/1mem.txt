@@ -1,0 +1,6 @@
+1day 9:00 CPU mem 110
+1day 9:00 GPU mem 11
+1day 10:00 CPU mem 210
+1day 10:00 GPU mem 21
+1day 11:00 CPU mem 310
+1day 11:00 GPU mem 31

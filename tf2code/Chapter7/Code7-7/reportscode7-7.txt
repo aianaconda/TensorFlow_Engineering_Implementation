@@ -1,0 +1,32 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 4 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: D:\01-TF\01-TF2\Chapter7\Code7-7\code7-7-TF1.py
+--------------------------------------------------------------------------------
+D:\01-TF\01-TF2\Chapter7\Code7-7\code7-7-TF1.py:45:23: ERROR: Using member tf.contrib.feature_column.sequence_categorical_column_with_identity in deprecated module tf.contrib. tf.contrib.feature_column.sequence_categorical_column_with_identity cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+D:\01-TF\01-TF2\Chapter7\Code7-7\code7-7-TF1.py:52:23: ERROR: Using member tf.contrib.feature_column.sequence_categorical_column_with_identity in deprecated module tf.contrib. tf.contrib.feature_column.sequence_categorical_column_with_identity cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+D:\01-TF\01-TF2\Chapter7\Code7-7\code7-7-TF1.py:70:31: ERROR: Using member tf.contrib.feature_column.sequence_input_layer in deprecated module tf.contrib. tf.contrib.feature_column.sequence_input_layer cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+D:\01-TF\01-TF2\Chapter7\Code7-7\code7-7-TF1.py:74:33: ERROR: Using member tf.contrib.feature_column.sequence_input_layer in deprecated module tf.contrib. tf.contrib.feature_column.sequence_input_layer cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'D:\\01-TF\\01-TF2\\Chapter7\\Code7-7\\code7-7-TF1.py'
+ outputting to 'D:\\01-TF\\01-TF2\\Chapter7\\Code7-7\\code7-7-TF2.py'
+--------------------------------------------------------------------------------
+
+11:0: INFO: Renamed 'tf.reset_default_graph' to 'tf.compat.v1.reset_default_graph'
+45:23: ERROR: Using member tf.contrib.feature_column.sequence_categorical_column_with_identity in deprecated module tf.contrib. tf.contrib.feature_column.sequence_categorical_column_with_identity cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+52:23: ERROR: Using member tf.contrib.feature_column.sequence_categorical_column_with_identity in deprecated module tf.contrib. tf.contrib.feature_column.sequence_categorical_column_with_identity cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+60:27: INFO: Renamed 'tf.feature_column.shared_embedding_columns' to 'tf.compat.v1.feature_column.shared_embedding_columns'
+70:31: ERROR: Using member tf.contrib.feature_column.sequence_input_layer in deprecated module tf.contrib. tf.contrib.feature_column.sequence_input_layer cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+74:33: ERROR: Using member tf.contrib.feature_column.sequence_input_layer in deprecated module tf.contrib. tf.contrib.feature_column.sequence_input_layer cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+78:14: INFO: Renamed 'tf.get_collection' to 'tf.compat.v1.get_collection'
+78:32: INFO: Renamed 'tf.GraphKeys' to 'tf.compat.v1.GraphKeys'
+81:5: INFO: Renamed 'tf.train.MonitoredSession' to 'tf.compat.v1.train.MonitoredSession'
+--------------------------------------------------------------------------------
+

@@ -1,0 +1,22 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 0 issues that require attention
+--------------------------------------------------------------------------------
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'D:\\01-TF\\01-TF2\\Chapter6\\code6-4\\code6-4-TF1.py'
+ outputting to 'D:\\01-TF\\01-TF2\\Chapter6\\code6-4\\code6-4-TF2.py'
+--------------------------------------------------------------------------------
+
+14:0: INFO: Renamed 'tf.enable_eager_execution' to 'tf.compat.v1.enable_eager_execution'
+15:37: INFO: Renamed 'tf.VERSION' to 'tf.version.VERSION'
+25:14: INFO: Renamed 'tf.train.get_or_create_global_step' to 'tf.compat.v1.train.get_or_create_global_step'
+29:12: INFO: Renamed 'tf.train.GradientDescentOptimizer' to 'tf.compat.v1.train.GradientDescentOptimizer'
+36:12: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+37:10: INFO: Added keywords to args of function 'tf.reduce_mean'
+--------------------------------------------------------------------------------
+

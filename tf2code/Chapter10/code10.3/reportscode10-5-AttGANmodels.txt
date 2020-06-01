@@ -1,0 +1,36 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 0 issues that require attention
+--------------------------------------------------------------------------------
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'D:\\01-TF\\01-TF2\\Chapter10\\code10.3\\code10-5-AttGANmodels-TF1.py'
+ outputting to 'D:\\01-TF\\01-TF2\\Chapter10\\code10.3\\code10-5-AttGANmodels-TF2.py'
+--------------------------------------------------------------------------------
+
+12:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+12:41: INFO: Renamed 'tf.AUTO_REUSE' to 'tf.compat.v1.AUTO_REUSE'
+37:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+37:41: INFO: Renamed 'tf.AUTO_REUSE' to 'tf.compat.v1.AUTO_REUSE'
+54:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+54:38: INFO: Renamed 'tf.AUTO_REUSE' to 'tf.compat.v1.AUTO_REUSE'
+72:13: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+72:13: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+74:23: INFO: Renamed 'tf.random_uniform' to 'tf.random.uniform'
+74:47: INFO: Added keywords to args of function 'tf.shape'
+75:30: INFO: Added keywords to args of function 'tf.nn.moments'
+77:21: INFO: Added keywords to args of function 'tf.shape'
+78:20: INFO: Renamed 'tf.random_uniform' to 'tf.random.uniform'
+83:9: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+83:9: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+88:15: INFO: Added keywords to args of function 'tf.gradients'
+89:15: INFO: Added keywords to args of function 'tf.norm'
+90:13: INFO: Added keywords to args of function 'tf.reduce_mean'
+--------------------------------------------------------------------------------
+

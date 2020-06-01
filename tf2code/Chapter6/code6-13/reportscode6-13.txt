@@ -1,0 +1,19 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 0 issues that require attention
+--------------------------------------------------------------------------------
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'D:\\01-TF\\01-TF2\\Chapter6\\code6-13\\code6-13-TF1.py'
+ outputting to 'D:\\01-TF\\01-TF2\\Chapter6\\code6-13\\code6-13-TF2.py'
+--------------------------------------------------------------------------------
+
+16:9: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+24:5: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+25:13: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+--------------------------------------------------------------------------------
+

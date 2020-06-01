@@ -1,0 +1,19 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 0 issues that require attention
+--------------------------------------------------------------------------------
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'D:\\01-TF\\01-TF2\\Chapter7\\Code7-15\\code7-15-TF1.py'
+ outputting to 'D:\\01-TF\\01-TF2\\Chapter7\\Code7-15\\code7-15-TF2.py'
+--------------------------------------------------------------------------------
+
+24:9: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+25:17: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+125:5: INFO: Renamed 'tf.reset_default_graph' to 'tf.compat.v1.reset_default_graph'
+--------------------------------------------------------------------------------
+

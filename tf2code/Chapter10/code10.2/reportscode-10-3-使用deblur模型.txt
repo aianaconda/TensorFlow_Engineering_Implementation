@@ -1,0 +1,30 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 3 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: D:\01-TF\01-TF2\Chapter10\code10.2\code-10-3-使用deblur模型-TF1.py
+--------------------------------------------------------------------------------
+D:\01-TF\01-TF2\Chapter10\code10.2\code-10-3-使用deblur模型-TF1.py:51:11: WARNING: Changing dataset.make_initializable_iterator() to tf.compat.v1.data.make_initializable_iterator(dataset). Please check this transformation.
+
+D:\01-TF\01-TF2\Chapter10\code10.2\code-10-3-使用deblur模型-TF1.py:82:8: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+D:\01-TF\01-TF2\Chapter10\code10.2\code-10-3-使用deblur模型-TF1.py:85:8: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'D:\\01-TF\\01-TF2\\Chapter10\\code10.2\\code-10-3-使用deblur模型-TF1.py'
+ outputting to 'D:\\01-TF\\01-TF2\\Chapter10\\code10.2\\code-10-3-使用deblur模型-TF2.py'
+--------------------------------------------------------------------------------
+
+33:19: INFO: Renamed 'tf.read_file' to 'tf.io.read_file'
+51:11: WARNING: Changing dataset.make_initializable_iterator() to tf.compat.v1.data.make_initializable_iterator(dataset). Please check this transformation.
+
+58:9: INFO: Renamed 'tf.ConfigProto' to 'tf.compat.v1.ConfigProto'
+61:7: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+82:8: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+85:8: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+--------------------------------------------------------------------------------
+

@@ -4,6 +4,14 @@ The source code and dataset about &lt;Deep Learning - Best Practices on TensorFl
 
 ![Image text](https://github.com/aianaconda/TensorFlow_Engineering_Implementation/blob/master/2.jpg)
 
+#目录说明
+
+code： 原书的配套代码源文件
+
+tf2code：将原书的部分代码转化成适用与tf2.1版本的代码源文件
+
+#
+
 # 《深度学习之TensorFlow工程化项目实战》一书配套代码及数据集资源(数据集太大，请访问www.aianaconda.com进行下载)
 这本AI技术工具书非常专注于实战应用。书中涵盖了TensorFlow 1.x到2.0版本的各种使用说明，及开发技巧。是代码医生工作室将近几年的经验积累。
 本书全长740多页，共75个实例。从基础的静态图讲到动态图再到编译子图、从估算器讲到特征列再到TFTS、从原生的TF语法讲到tf.keras使用技巧、从tfRecorder的数据集制作讲到Dataset接口的使用、还有TF_serving、saved_model、TF_lite、cleverhans等更多接口的使用介绍。

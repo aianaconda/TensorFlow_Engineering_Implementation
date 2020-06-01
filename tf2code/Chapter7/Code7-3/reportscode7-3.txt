@@ -1,0 +1,28 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 0 issues that require attention
+--------------------------------------------------------------------------------
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'D:\\01-TF\\01-TF2\\Chapter7\\Code7-3\\code7-3-TF1.py'
+ outputting to 'D:\\01-TF\\01-TF2\\Chapter7\\Code7-3\\code7-3-TF2.py'
+--------------------------------------------------------------------------------
+
+16:10: INFO: Renamed 'tf.feature_column.input_layer' to 'tf.compat.v1.feature_column.input_layer'
+18:9: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+28:24: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+29:10: INFO: Renamed 'tf.feature_column.input_layer' to 'tf.compat.v1.feature_column.input_layer'
+31:9: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+48:4: INFO: Renamed 'tf.reset_default_graph' to 'tf.compat.v1.reset_default_graph'
+54:10: INFO: Renamed 'tf.feature_column.input_layer' to 'tf.compat.v1.feature_column.input_layer'
+55:11: INFO: Renamed 'tf.feature_column.input_layer' to 'tf.compat.v1.feature_column.input_layer'
+56:9: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+63:4: INFO: Renamed 'tf.reset_default_graph' to 'tf.compat.v1.reset_default_graph'
+75:10: INFO: Renamed 'tf.feature_column.input_layer' to 'tf.compat.v1.feature_column.input_layer'
+77:9: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+--------------------------------------------------------------------------------
+

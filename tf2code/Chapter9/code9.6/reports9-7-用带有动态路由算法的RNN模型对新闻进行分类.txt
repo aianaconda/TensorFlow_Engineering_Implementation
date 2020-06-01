@@ -1,0 +1,52 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 2 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: D:\01-TF\01-TF2\Chapter9\code9.6\9-7-用带有动态路由算法的RNN模型对新闻进行分类-TF1.py
+--------------------------------------------------------------------------------
+D:\01-TF\01-TF2\Chapter9\code9.6\9-7-用带有动态路由算法的RNN模型对新闻进行分类-TF1.py:145:11: WARNING: Using member tf.contrib.rnn.IndyLSTMCell in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+D:\01-TF\01-TF2\Chapter9\code9.6\9-7-用带有动态路由算法的RNN模型对新闻进行分类-TF1.py:145:11: ERROR: Using member tf.contrib.rnn.IndyLSTMCell in deprecated module tf.contrib. tf.contrib.rnn.IndyLSTMCell cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'D:\\01-TF\\01-TF2\\Chapter9\\code9.6\\9-7-用带有动态路由算法的RNN模型对新闻进行分类-TF1.py'
+ outputting to 'D:\\01-TF\\01-TF2\\Chapter9\\code9.6\\9-7-用带有动态路由算法的RNN模型对新闻进行分类-TF2.py'
+--------------------------------------------------------------------------------
+
+43:0: INFO: Renamed 'tf.reset_default_graph' to 'tf.compat.v1.reset_default_graph'
+54:21: INFO: Added keywords to args of function 'tf.shape'
+66:24: INFO: Added keywords to args of function 'tf.shape'
+66:42: INFO: Added keywords to args of function 'tf.shape'
+68:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+69:20: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+78:24: INFO: Added keywords to args of function 'tf.shape'
+78:47: INFO: Added keywords to args of function 'tf.shape'
+80:13: INFO: Renamed 'tf.where' to 'tf.compat.v1.where'
+91:12: INFO: Added keywords to args of function 'tf.reduce_sum'
+95:12: INFO: Added keywords to args of function 'tf.reduce_sum'
+105:23: INFO: Added keywords to args of function 'tf.reduce_sum'
+114:11: INFO: Added keywords to args of function 'tf.shape'
+115:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+120:23: INFO: Renamed 'tf.layers.dropout' to 'tf.compat.v1.layers.dropout'
+134:4: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+135:8: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+136:4: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+145:11: WARNING: Using member tf.contrib.rnn.IndyLSTMCell in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+145:11: ERROR: Using member tf.contrib.rnn.IndyLSTMCell in deprecated module tf.contrib. tf.contrib.rnn.IndyLSTMCell cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+146:23: INFO: Renamed 'tf.nn.rnn_cell.DropoutWrapper' to 'tf.compat.v1.nn.rnn_cell.DropoutWrapper'
+147:8: INFO: Renamed 'tf.nn.rnn_cell.MultiRNNCell' to 'tf.compat.v1.nn.rnn_cell.MultiRNNCell'
+149:16: INFO: Renamed 'tf.nn.dynamic_rnn' to 'tf.compat.v1.nn.dynamic_rnn'
+155:6: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+161:7: INFO: Added keywords to args of function 'tf.reduce_mean'
+161:22: INFO: tf.losses.sparse_softmax_cross_entropy requires manual check. tf.losses have been replaced with object oriented versions in TF 2.0 and after. The loss function calls have been converted to compat.v1 for backward compatibility. Please update these calls to the TF 2.0 versions.
+161:22: INFO: Renamed 'tf.losses.sparse_softmax_cross_entropy' to 'tf.compat.v1.losses.sparse_softmax_cross_entropy'
+162:12: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+164:12: INFO: Renamed 'tf.data.Iterator' to 'tf.compat.v1.data.Iterator'
+169:5: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+171:13: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+--------------------------------------------------------------------------------
+
