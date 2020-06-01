@@ -1,0 +1,32 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 2 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: D:\01-TF\01-TF2\Chapter4\code4-14\code4-14-TF1.py
+--------------------------------------------------------------------------------
+D:\01-TF\01-TF2\Chapter4\code4-14\code4-14-TF1.py:37:11: WARNING: Changing dataset.make_one_shot_iterator() to tf.compat.v1.data.make_one_shot_iterator(dataset). Please check this transformation.
+
+D:\01-TF\01-TF2\Chapter4\code4-14\code4-14-TF1.py:40:16: WARNING: Changing dataset.make_one_shot_iterator() to tf.compat.v1.data.make_one_shot_iterator(dataset). Please check this transformation.
+
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'D:\\01-TF\\01-TF2\\Chapter4\\code4-14\\code4-14-TF1.py'
+ outputting to 'D:\\01-TF\\01-TF2\\Chapter4\\code4-14\\code4-14-TF22.py'
+--------------------------------------------------------------------------------
+
+17:12: INFO: Renamed 'tf.data.Iterator' to 'tf.compat.v1.data.Iterator'
+21:5: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+37:11: WARNING: Changing dataset.make_one_shot_iterator() to tf.compat.v1.data.make_one_shot_iterator(dataset). Please check this transformation.
+
+40:16: WARNING: Changing dataset.make_one_shot_iterator() to tf.compat.v1.data.make_one_shot_iterator(dataset). Please check this transformation.
+
+42:5: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+46:13: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+47:16: INFO: Renamed 'tf.data.Iterator' to 'tf.compat.v1.data.Iterator'
+--------------------------------------------------------------------------------
+

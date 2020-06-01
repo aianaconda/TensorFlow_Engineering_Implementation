@@ -1,0 +1,25 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 1 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: D:\01-TF\01-TF2\Chapter4\code4-9\code4-9-TF1.py
+--------------------------------------------------------------------------------
+D:\01-TF\01-TF2\Chapter4\code4-9\code4-9-TF1.py:18:15: WARNING: Changing dataset.make_one_shot_iterator() to tf.compat.v1.data.make_one_shot_iterator(dataset). Please check this transformation.
+
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'D:\\01-TF\\01-TF2\\Chapter4\\code4-9\\code4-9-TF1.py'
+ outputting to 'D:\\01-TF\\01-TF2\\Chapter4\\code4-9\\code4-9-TF2.py'
+--------------------------------------------------------------------------------
+
+18:15: WARNING: Changing dataset.make_one_shot_iterator() to tf.compat.v1.data.make_one_shot_iterator(dataset). Please check this transformation.
+
+24:5: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+33:5: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+--------------------------------------------------------------------------------
+

@@ -1,0 +1,31 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 1 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: D:\01-TF\01-TF2\Chapter4\code4-10\code4-10-TF1.py
+--------------------------------------------------------------------------------
+D:\01-TF\01-TF2\Chapter4\code4-10\code4-10-TF1.py:133:15: WARNING: Changing dataset.make_one_shot_iterator() to tf.compat.v1.data.make_one_shot_iterator(dataset). Please check this transformation.
+
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'D:\\01-TF\\01-TF2\\Chapter4\\code4-10\\code4-10-TF1.py'
+ outputting to 'D:\\01-TF\\01-TF2\\Chapter4\\code4-10\\code4-10-TF22.py'
+--------------------------------------------------------------------------------
+
+46:12: INFO: Renamed 'tf.random_uniform' to 'tf.random.uniform'
+47:26: INFO: Renamed 'tf.random_crop' to 'tf.image.random_crop'
+55:26: INFO: Renamed 'tf.random_shuffle' to 'tf.random.shuffle'
+80:8: INFO: Renamed 'tf.random_uniform' to 'tf.random.uniform'
+81:20: INFO: Added keywords to args of function 'tf.cond'
+92:23: INFO: Renamed 'tf.read_file' to 'tf.io.read_file'
+133:15: WARNING: Changing dataset.make_one_shot_iterator() to tf.compat.v1.data.make_one_shot_iterator(dataset). Please check this transformation.
+
+149:5: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+150:13: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+--------------------------------------------------------------------------------
+

@@ -1,0 +1,31 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 0 issues that require attention
+--------------------------------------------------------------------------------
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'D:\\01-TF\\01-TF2\\Chapter6\\code6-6\\code6-6-TF1.py'
+ outputting to 'D:\\01-TF\\01-TF2\\Chapter6\\code6-6\\code6-6-TF2.py'
+--------------------------------------------------------------------------------
+
+43:20: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+52:11: INFO: tf.losses.mean_squared_error requires manual check. tf.losses have been replaced with object oriented versions in TF 2.0 and after. The loss function calls have been converted to compat.v1 for backward compatibility. Please update these calls to the TF 2.0 versions.
+52:11: INFO: Renamed 'tf.losses.mean_squared_error' to 'tf.compat.v1.losses.mean_squared_error'
+54:16: INFO: tf.metrics.mean requires manual check. tf.metrics have been replaced with object oriented versions in TF 2.0 and after. The metric function calls have been converted to compat.v1 for backward compatibility. Please update these calls to the TF 2.0 versions.
+54:16: INFO: Renamed 'tf.metrics.mean' to 'tf.compat.v1.metrics.mean'
+63:16: INFO: Renamed 'tf.train.AdagradOptimizer' to 'tf.compat.v1.train.AdagradOptimizer'
+64:52: INFO: Renamed 'tf.train.get_global_step' to 'tf.compat.v1.train.get_global_step'
+68:0: INFO: Renamed 'tf.reset_default_graph' to 'tf.compat.v1.reset_default_graph'
+69:0: INFO: Renamed 'tf.logging.set_verbosity' to 'tf.compat.v1.logging.set_verbosity'
+69:25: INFO: Renamed 'tf.logging.INFO' to 'tf.compat.v1.logging.INFO'
+70:14: INFO: Renamed 'tf.GPUOptions' to 'tf.compat.v1.GPUOptions'
+71:15: INFO: Renamed 'tf.ConfigProto' to 'tf.compat.v1.ConfigProto'
+77:0: INFO: Renamed 'tf.logging.info' to 'tf.compat.v1.logging.info'
+110:16: INFO: Renamed 'tf.estimator.inputs.numpy_input_fn' to 'tf.compat.v1.estimator.inputs.numpy_input_fn'
+120:19: INFO: Renamed 'tf.estimator.inputs.numpy_input_fn' to 'tf.compat.v1.estimator.inputs.numpy_input_fn'
+--------------------------------------------------------------------------------
+

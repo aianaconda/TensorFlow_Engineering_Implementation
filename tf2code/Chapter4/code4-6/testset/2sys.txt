@@ -1,0 +1,6 @@
+2day 9:00 CPU  12.1
+2day 9:00 GPU  92.1
+2day 10:00 CPU  12.2
+2day 10:00 GPU  92.2
+2day 11:00 CPU  12.3
+2day 11:00 GPU  92.3

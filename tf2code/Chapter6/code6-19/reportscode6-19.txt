@@ -1,0 +1,37 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 2 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: D:\01-TF\01-TF2\Chapter6\code6-19\code6-19-TF1.py
+--------------------------------------------------------------------------------
+D:\01-TF\01-TF2\Chapter6\code6-19\code6-19-TF1.py:147:15: WARNING: Changing dataset.make_one_shot_iterator() to tf.compat.v1.data.make_one_shot_iterator(dataset). Please check this transformation.
+
+D:\01-TF\01-TF2\Chapter6\code6-19\code6-19-TF1.py:192:14: WARNING: tf.keras.estimator.model_to_estimator requires manual check. Estimators from tf.keras.estimator.model_to_estimator will save object-based checkpoints (format used by `keras_model.save_weights` and `keras_model.load_weights`) by default in 2.0. To continue saving name-based checkpoints, set `checkpoint_format='saver'`.
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'D:\\01-TF\\01-TF2\\Chapter6\\code6-19\\code6-19-TF1.py'
+ outputting to 'D:\\01-TF\\01-TF2\\Chapter6\\code6-19\\code6-19-TF2.py'
+--------------------------------------------------------------------------------
+
+44:12: INFO: Renamed 'tf.random_uniform' to 'tf.random.uniform'
+45:26: INFO: Renamed 'tf.random_crop' to 'tf.image.random_crop'
+53:26: INFO: Renamed 'tf.random_shuffle' to 'tf.random.shuffle'
+68:24: INFO: Renamed 'tf.py_func' to 'tf.compat.v1.py_func'
+71:8: INFO: Renamed 'tf.random_uniform' to 'tf.random.uniform'
+72:20: INFO: Added keywords to args of function 'tf.cond'
+84:23: INFO: Renamed 'tf.read_file' to 'tf.io.read_file'
+88:24: INFO: Renamed 'tf.image.resize_images' to 'tf.image.resize'
+90:24: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+147:15: WARNING: Changing dataset.make_one_shot_iterator() to tf.compat.v1.data.make_one_shot_iterator(dataset). Please check this transformation.
+
+154:5: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+155:13: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+192:14: WARNING: tf.keras.estimator.model_to_estimator requires manual check. Estimators from tf.keras.estimator.model_to_estimator will save object-based checkpoints (format used by `keras_model.save_weights` and `keras_model.load_weights`) by default in 2.0. To continue saving name-based checkpoints, set `checkpoint_format='saver'`.
+209:15: INFO: Renamed 'tf.estimator.inputs.numpy_input_fn' to 'tf.compat.v1.estimator.inputs.numpy_input_fn'
+--------------------------------------------------------------------------------
+

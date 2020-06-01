@@ -1,0 +1,26 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 0 issues that require attention
+--------------------------------------------------------------------------------
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'D:\\01-TF\\01-TF2\\Chapter6\\code6-8\\code6-8-TF1.py'
+ outputting to 'D:\\01-TF\\01-TF2\\Chapter6\\code6-8\\code6-8-TF2.py'
+--------------------------------------------------------------------------------
+
+12:4: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+16:7: INFO: Added keywords to args of function 'tf.reduce_mean'
+17:12: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+19:12: INFO: Renamed 'tf.train.SessionRunHook' to 'tf.estimator.SessionRunHook'
+27:11: INFO: Renamed 'tf.train.SessionRunArgs' to 'tf.estimator.SessionRunArgs'
+33:7: INFO: Renamed 'tf.train.MonitoredSession' to 'tf.compat.v1.train.MonitoredSession'
+39:0: INFO: Renamed 'tf.reset_default_graph' to 'tf.compat.v1.reset_default_graph'
+41:5: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+43:7: INFO: Renamed 'tf.train.FeedFnHook' to 'tf.estimator.FeedFnHook'
+44:7: INFO: Renamed 'tf.train.MonitoredSession' to 'tf.compat.v1.train.MonitoredSession'
+--------------------------------------------------------------------------------
+
