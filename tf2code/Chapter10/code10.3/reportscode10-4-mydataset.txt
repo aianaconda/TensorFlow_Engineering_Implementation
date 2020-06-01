@@ -1,0 +1,25 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 1 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: D:\01-TF\01-TF2\Chapter10\code10.3\code10-4-mydataset-TF1.py
+--------------------------------------------------------------------------------
+D:\01-TF\01-TF2\Chapter10\code10.3\code10-4-mydataset-TF1.py:57:29: WARNING: Changing dataset.make_initializable_iterator() to tf.compat.v1.data.make_initializable_iterator(dataset). Please check this transformation.
+
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'D:\\01-TF\\01-TF2\\Chapter10\\code10.3\\code10-4-mydataset-TF1.py'
+ outputting to 'D:\\01-TF\\01-TF2\\Chapter10\\code10.3\\code10-4-mydataset-TF2.py'
+--------------------------------------------------------------------------------
+
+57:29: WARNING: Changing dataset.make_initializable_iterator() to tf.compat.v1.data.make_initializable_iterator(dataset). Please check this transformation.
+
+62:29: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+100:14: INFO: Renamed 'tf.read_file' to 'tf.io.read_file'
+--------------------------------------------------------------------------------
+

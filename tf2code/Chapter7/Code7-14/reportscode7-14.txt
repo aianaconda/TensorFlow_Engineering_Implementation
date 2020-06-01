@@ -1,0 +1,78 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 9 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: D:\01-TF\01-TF2\Chapter7\Code7-14\code7-14-TF1.py
+--------------------------------------------------------------------------------
+D:\01-TF\01-TF2\Chapter7\Code7-14\code7-14-TF1.py:65:31: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+D:\01-TF\01-TF2\Chapter7\Code7-14\code7-14-TF1.py:66:31: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+D:\01-TF\01-TF2\Chapter7\Code7-14\code7-14-TF1.py:67:33: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+D:\01-TF\01-TF2\Chapter7\Code7-14\code7-14-TF1.py:68:35: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+D:\01-TF\01-TF2\Chapter7\Code7-14\code7-14-TF1.py:71:31: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+D:\01-TF\01-TF2\Chapter7\Code7-14\code7-14-TF1.py:72:31: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+D:\01-TF\01-TF2\Chapter7\Code7-14\code7-14-TF1.py:73:31: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+D:\01-TF\01-TF2\Chapter7\Code7-14\code7-14-TF1.py:74:35: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+D:\01-TF\01-TF2\Chapter7\Code7-14\code7-14-TF1.py:75:31: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'D:\\01-TF\\01-TF2\\Chapter7\\Code7-14\\code7-14-TF1.py'
+ outputting to 'D:\\01-TF\\01-TF2\\Chapter7\\Code7-14\\code7-14-TF2.py'
+--------------------------------------------------------------------------------
+
+10:19: INFO: Renamed 'tf.layers.Dense' to 'tf.compat.v1.layers.Dense'
+11:19: INFO: Renamed 'tf.layers.Dense' to 'tf.compat.v1.layers.Dense'
+12:19: INFO: Renamed 'tf.layers.Dense' to 'tf.compat.v1.layers.Dense'
+13:19: INFO: Renamed 'tf.layers.Dense' to 'tf.compat.v1.layers.Dense'
+14:75: INFO: tf.zeros_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+14:75: INFO: Renamed 'tf.zeros_initializer' to 'tf.compat.v1.zeros_initializer'
+15:75: INFO: tf.zeros_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+15:75: INFO: Renamed 'tf.zeros_initializer' to 'tf.compat.v1.zeros_initializer'
+19:12: INFO: Renamed keyword argument for tf.expand_dims from dim to axis
+20:12: INFO: Renamed keyword argument for tf.expand_dims from dim to axis
+23:29: INFO: Added keywords to args of function 'tf.transpose'
+55:28: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+56:28: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+57:22: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+58:28: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+59:28: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+60:32: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+65:31: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+65:31: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+66:31: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+66:31: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+67:33: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+67:33: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+68:35: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+68:35: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+71:31: INFO: Added keywords to args of function 'tf.nn.embedding_lookup'
+71:31: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+72:31: INFO: Added keywords to args of function 'tf.nn.embedding_lookup'
+72:31: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+73:31: INFO: Added keywords to args of function 'tf.nn.embedding_lookup'
+73:31: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+74:35: INFO: Added keywords to args of function 'tf.nn.embedding_lookup'
+74:35: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+75:31: INFO: Added keywords to args of function 'tf.nn.embedding_lookup'
+75:31: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+79:23: INFO: Renamed 'tf.layers.Dense' to 'tf.compat.v1.layers.Dense'
+80:23: INFO: Renamed 'tf.layers.Dense' to 'tf.compat.v1.layers.Dense'
+98:26: INFO: Added keywords to args of function 'tf.reduce_sum'
+103:25: INFO: Renamed 'tf.layers.Dense' to 'tf.compat.v1.layers.Dense'
+108:26: INFO: Renamed 'tf.layers.Dense' to 'tf.compat.v1.layers.Dense'
+118:22: INFO: Renamed 'tf.layers.Dense' to 'tf.compat.v1.layers.Dense'
+122:23: INFO: Renamed 'tf.layers.Dense' to 'tf.compat.v1.layers.Dense'
+127:40: INFO: Added keywords to args of function 'tf.reduce_sum'
+128:20: INFO: Added keywords to args of function 'tf.reduce_mean'
+129:20: INFO: Added keywords to args of function 'tf.reduce_sum'
+133:28: INFO: Added keywords to args of function 'tf.reduce_mean'
+148:28: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+149:29: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+--------------------------------------------------------------------------------
+

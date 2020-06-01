@@ -1,0 +1,37 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 1 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: D:\01-TF\01-TF2\Chapter7\Code7-2\code7-2-TF1.py
+--------------------------------------------------------------------------------
+D:\01-TF\01-TF2\Chapter7\Code7-2\code7-2-TF1.py:197:2: ERROR: *.export_savedmodel requires manual check. (Manual edit required) Please rename the method export_savedmodel() to export_saved_model(). Two things to note:
+	(1) The argument strip_default_attributes has been removed. The function will always strip the default attributes from ops. If this breaks your code, please switch to tf.compat.v1.estimator.Estimator.
+	(2) This change only effects core estimator. If you are using tf.contrib.learn.Estimator, please switch to using core estimator.
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'D:\\01-TF\\01-TF2\\Chapter7\\Code7-2\\code7-2-TF1.py'
+ outputting to 'D:\\01-TF\\01-TF2\\Chapter7\\Code7-2\\code7-2-TF2.py'
+--------------------------------------------------------------------------------
+
+121:21: INFO: Renamed 'tf.ConfigProto' to 'tf.compat.v1.ConfigProto'
+125:11: INFO: tf.estimator.LinearClassifier: Default value of loss_reduction has been changed to SUM_OVER_BATCH_SIZE; inserting old default value tf.keras.losses.Reduction.SUM.
+
+130:11: INFO: tf.estimator.DNNClassifier: Default value of loss_reduction has been changed to SUM_OVER_BATCH_SIZE; inserting old default value tf.keras.losses.Reduction.SUM.
+
+142:11: INFO: tf.estimator.DNNLinearCombinedClassifier: Default value of loss_reduction has been changed to SUM_OVER_BATCH_SIZE; inserting old default value tf.keras.losses.Reduction.SUM.
+
+153:9: INFO: Renamed 'tf.gfile.Exists' to 'tf.io.gfile.exists'
+159:14: INFO: Added keywords to args of function 'tf.decode_csv'
+159:14: INFO: Renamed 'tf.decode_csv' to 'tf.io.decode_csv'
+197:2: ERROR: *.export_savedmodel requires manual check. (Manual edit required) Please rename the method export_savedmodel() to export_saved_model(). Two things to note:
+	(1) The argument strip_default_attributes has been removed. The function will always strip the default attributes from ops. If this breaks your code, please switch to tf.compat.v1.estimator.Estimator.
+	(2) This change only effects core estimator. If you are using tf.contrib.learn.Estimator, please switch to using core estimator.
+286:2: INFO: Renamed 'tf.logging.set_verbosity' to 'tf.compat.v1.logging.set_verbosity'
+286:27: INFO: Renamed 'tf.logging.ERROR' to 'tf.compat.v1.logging.ERROR'
+--------------------------------------------------------------------------------
+

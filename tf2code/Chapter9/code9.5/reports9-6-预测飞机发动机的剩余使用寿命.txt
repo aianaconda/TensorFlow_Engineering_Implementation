@@ -1,0 +1,44 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 2 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: D:\01-TF\01-TF2\Chapter9\code9.5\9-6-预测飞机发动机的剩余使用寿命-TF1.py
+--------------------------------------------------------------------------------
+D:\01-TF\01-TF2\Chapter9\code9.5\9-6-预测飞机发动机的剩余使用寿命-TF1.py:199:11: WARNING: Changing dataset.make_one_shot_iterator() to tf.compat.v1.data.make_one_shot_iterator(dataset). Please check this transformation.
+
+D:\01-TF\01-TF2\Chapter9\code9.5\9-6-预测飞机发动机的剩余使用寿命-TF1.py:202:16: WARNING: Changing dataset.make_one_shot_iterator() to tf.compat.v1.data.make_one_shot_iterator(dataset). Please check this transformation.
+
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'D:\\01-TF\\01-TF2\\Chapter9\\code9.5\\9-6-预测飞机发动机的剩余使用寿命-TF1.py'
+ outputting to 'D:\\01-TF\\01-TF2\\Chapter9\\code9.5\\9-6-预测飞机发动机的剩余使用寿命-TF2.py'
+--------------------------------------------------------------------------------
+
+162:0: INFO: Renamed 'tf.reset_default_graph' to 'tf.compat.v1.reset_default_graph'
+170:4: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+171:4: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+172:7: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+178:23: INFO: Renamed 'tf.nn.rnn_cell.DropoutWrapper' to 'tf.compat.v1.nn.rnn_cell.DropoutWrapper'
+179:8: INFO: Renamed 'tf.contrib.rnn.MultiRNNCell' to 'tf.compat.v1.nn.rnn_cell.MultiRNNCell'
+181:13: INFO: Renamed 'tf.nn.dynamic_rnn' to 'tf.compat.v1.nn.dynamic_rnn'
+182:10: INFO: Added keywords to args of function 'tf.transpose'
+186:6: INFO: Renamed 'tf.layers.conv2d' to 'tf.compat.v1.layers.conv2d'
+189:9: INFO: Renamed 'tf.layers.conv2d' to 'tf.compat.v1.layers.conv2d'
+192:10: INFO: Added keywords to args of function 'tf.reduce_mean'
+193:12: INFO: Added keywords to args of function 'tf.reduce_mean'
+193:27: INFO: tf.losses.sparse_softmax_cross_entropy requires manual check. tf.losses have been replaced with object oriented versions in TF 2.0 and after. The loss function calls have been converted to compat.v1 for backward compatibility. Please update these calls to the TF 2.0 versions.
+193:27: INFO: Renamed 'tf.losses.sparse_softmax_cross_entropy' to 'tf.compat.v1.losses.sparse_softmax_cross_entropy'
+196:12: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+199:11: WARNING: Changing dataset.make_one_shot_iterator() to tf.compat.v1.data.make_one_shot_iterator(dataset). Please check this transformation.
+
+202:16: WARNING: Changing dataset.make_one_shot_iterator() to tf.compat.v1.data.make_one_shot_iterator(dataset). Please check this transformation.
+
+206:5: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+207:13: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+--------------------------------------------------------------------------------
+

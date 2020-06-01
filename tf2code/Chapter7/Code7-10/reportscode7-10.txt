@@ -1,0 +1,29 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 2 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: D:\01-TF\01-TF2\Chapter7\Code7-10\code7-10-TF1.py
+--------------------------------------------------------------------------------
+D:\01-TF\01-TF2\Chapter7\Code7-10\code7-10-TF1.py:77:14: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+D:\01-TF\01-TF2\Chapter7\Code7-10\code7-10-TF1.py:81:14: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'D:\\01-TF\\01-TF2\\Chapter7\\Code7-10\\code7-10-TF1.py'
+ outputting to 'D:\\01-TF\\01-TF2\\Chapter7\\Code7-10\\code7-10-TF2.py'
+--------------------------------------------------------------------------------
+
+52:7: INFO: Renamed 'tf.InteractiveSession' to 'tf.compat.v1.InteractiveSession'
+77:14: INFO: Added keywords to args of function 'tf.nn.embedding_lookup'
+77:14: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+81:14: INFO: Added keywords to args of function 'tf.nn.embedding_lookup'
+81:14: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+98:4: INFO: Added keywords to args of function 'tf.sparse_add'
+98:4: INFO: Renamed 'tf.sparse_add' to 'tf.sparse.add'
+101:18: INFO: Renamed 'tf.sparse_reduce_sum' to 'tf.sparse.reduce_sum'
+--------------------------------------------------------------------------------
+

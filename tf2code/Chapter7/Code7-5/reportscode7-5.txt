@@ -1,0 +1,33 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 0 issues that require attention
+--------------------------------------------------------------------------------
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'D:\\01-TF\\01-TF2\\Chapter7\\Code7-5\\code7-5-TF1.py'
+ outputting to 'D:\\01-TF\\01-TF2\\Chapter7\\Code7-5\\code7-5-TF2.py'
+--------------------------------------------------------------------------------
+
+13:4: INFO: Renamed 'tf.reset_default_graph' to 'tf.compat.v1.reset_default_graph'
+22:9: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+27:24: INFO: Renamed 'tf.sparse_tensor_to_dense' to 'tf.sparse.to_dense'
+36:4: INFO: Renamed 'tf.reset_default_graph' to 'tf.compat.v1.reset_default_graph'
+58:9: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+66:24: INFO: Renamed 'tf.sparse_tensor_to_dense' to 'tf.sparse.to_dense'
+74:4: INFO: Renamed 'tf.reset_default_graph' to 'tf.compat.v1.reset_default_graph'
+86:10: INFO: Renamed 'tf.feature_column.input_layer' to 'tf.compat.v1.feature_column.input_layer'
+87:9: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+98:4: INFO: Renamed 'tf.reset_default_graph' to 'tf.compat.v1.reset_default_graph'
+110:10: INFO: Renamed 'tf.feature_column.input_layer' to 'tf.compat.v1.feature_column.input_layer'
+112:9: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+113:17: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+120:4: INFO: Renamed 'tf.reset_default_graph' to 'tf.compat.v1.reset_default_graph'
+139:10: INFO: Renamed 'tf.feature_column.input_layer' to 'tf.compat.v1.feature_column.input_layer'
+141:9: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+142:17: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+--------------------------------------------------------------------------------
+

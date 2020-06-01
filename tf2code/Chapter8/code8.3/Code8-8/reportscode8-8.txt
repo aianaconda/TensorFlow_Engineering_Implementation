@@ -1,0 +1,38 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 3 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: D:\01-TF\01-TF2\Chapter8\Code8-8\code8-8-TF1.py
+--------------------------------------------------------------------------------
+D:\01-TF\01-TF2\Chapter8\Code8-8\code8-8-TF1.py:38:15: WARNING: Changing dataset.make_one_shot_iterator() to tf.compat.v1.data.make_one_shot_iterator(dataset). Please check this transformation.
+
+D:\01-TF\01-TF2\Chapter8\Code8-8\code8-8-TF1.py:78:8: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+D:\01-TF\01-TF2\Chapter8\Code8-8\code8-8-TF1.py:104:23: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'D:\\01-TF\\01-TF2\\Chapter8\\Code8-8\\code8-8-TF1.py'
+ outputting to 'D:\\01-TF\\01-TF2\\Chapter8\\Code8-8\\code8-8-TF2.py'
+--------------------------------------------------------------------------------
+
+34:4: INFO: Renamed 'tf.reset_default_graph' to 'tf.compat.v1.reset_default_graph'
+38:15: WARNING: Changing dataset.make_one_shot_iterator() to tf.compat.v1.data.make_one_shot_iterator(dataset). Please check this transformation.
+
+54:19: INFO: Renamed 'tf.ConfigProto' to 'tf.compat.v1.ConfigProto'
+55:9: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+56:17: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+66:31: INFO: tf.summary.FileWriter requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+66:31: INFO: Renamed 'tf.summary.FileWriter' to 'tf.compat.v1.summary.FileWriter'
+75:16: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+75:31: INFO: Renamed 'tf.global_variables' to 'tf.compat.v1.global_variables'
+78:8: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+94:15: INFO: Renamed 'tf.train.global_step' to 'tf.compat.v1.train.global_step'
+99:27: INFO: Renamed 'tf.train.global_step' to 'tf.compat.v1.train.global_step'
+104:23: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+111:4: INFO: Renamed 'tf.app.run' to 'tf.compat.v1.app.run'
+--------------------------------------------------------------------------------
+
