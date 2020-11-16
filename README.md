@@ -41,7 +41,8 @@ tf2code：将原书的部分代码转化成适用与tf2.1版本的代码源文�
 * 增加了基于URL、安卓、IOS的上的布署实例
 ##  二、书中包含的知识点如下： 
 TF-slim、TF-Hub、T2T、tf.layers、tf.js、TFDS、tf.Keras、TFLearn、tfdbg、Training Hooks、Estimators、eager、TF_CONFIG、KubeFlow、tf.feature_column、知识图谱、sequence_feature_column、TFBT、 factorization、Lattice、tf.Transform、点阵校准模型、wals kmeans  BoostedTrees、深度卷积、空洞卷积、深度可分离卷积、胶囊卷积网络、矩阵胶囊、TextCnn、ResNet、PNASNet、VGG、YOLO V3、Mask R-CNN、Targeted Dropout、QRNN 、SRU、 IndRnn、IndyLSTM、 JANET、 Seq2Seq、TFTS 、多项式分布、Tacotron、TFGan、多头注意力、BahdanauAttention 、LuongAttention、 单调注意力机制、混合注意力机制、stft、ReNorm、LayerNorm、instance_norm、GroupNorm、SwitchableNorm、FGSM、cleverhans 黑箱攻击  Jacobian矩阵、defun、TF_serving  saved_model  TF_lite。
-<img src="https://www.aianaconda.com/static/code/36.jpg" width="300" /> <img src="https://www.aianaconda.com/static/code/1.jpg" width="100" />
+<img src="https://www.aianaconda.com/static/code/36.jpg" width="400" /> 
+<img src="https://www.aianaconda.com/static/code/1.jpg" width="100" />
 
 
 同样该书仍然保持以前一贯的作风：
