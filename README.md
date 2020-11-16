@@ -2,7 +2,7 @@
 # TensorFlow_Engineering_Implementation
 The source code and dataset about &lt;Deep Learning - Best Practices on TensorFlow Engineering Implementation> 
 
-<img src="https://github.com/aianaconda/TensorFlow_Engineering_Implementation/blob/master/2.jpg" width="200" />
+<img src="https://www.aianaconda.com/static/code/threebook.png" width="200" />
 
 #目录说明
 
